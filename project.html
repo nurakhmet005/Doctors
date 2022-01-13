@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditer</title>
+    <link rel="stylesheet" href="./styles/project.css" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="inner">
+          <div class="header__flex">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html"> Главная</a></li>
+                <li class="nav__item">
+                  <a href="./about.html"> Обо мне</a>
+                </li>
+                <li class="nav__item"><a href=""> Проекты</a></li>
+              </ul>
+            </nav>
+            <button class="header__button btn" data-modal="1">
+              Сделать заказ
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="cards">
+        <div class="wrapper">
+          <div class="inner">
+            <div class="cards">
+              <div class="card">
+                <h2>Недорого</h2>
+                <p>Цены начинаются от 1500 тенге</p>
+              </div>
+              <div class="card">
+                <h2>Быстро</h2>
+                <p>Заказ выполняется от 5 часов</p>
+              </div>
+              <div class="card">
+                <h2>Доставка</h2>
+                <p>Сами привезем заказ к Вашим дверям</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="wrapper projects__wrapper">
+          <div class="inner projects__inner">
+            <h1 class="projects__header">Мои работы</h1>
+            <div class="projects__cards-main"></div>
+          </div>
+        </div>
+      </section>
+      <section id="video">
+        <div class="wrapper">
+          <div class="video__container">
+            <div class="video__element">
+              <div class="video__description">
+                <h1>Здесь Вы можете посмотреть, как я работаю</h1>
+                <button class="video__btn">
+                  <span class="play-button" data-modal="2">
+                    <img src="./images/play-button.png" alt="video-start" />
+                    <span>Play video</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reviews">
+        <div class="reviews__wrapper">
+          <div class="inner">
+            <div class="h1">
+              <h1>Отзывы</h1>
+            </div>
+
+            <div class="rectangle">
+              <img src="./images/travis.png" alt="" />
+              <div class="text">
+                <h3>Глеб</h3>
+                <div class="blockquote">
+                  <p>
+                    Неделю назад заказывал торт на день рождения друга. Все было
+                    очень вкусно, все в восторге! Спасибо большое, всем
+                    рекомендую попробовать ее изумительные торты!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="rectangle">
+              <img src="./images/Susan.png" alt="" />
+              <div class="text">
+                <h3>Лиа</h3>
+                <div class="blockquote">
+                  <p>
+                    Недавно заказывала бенто-тортик и капкейки. Доставили очень
+                    быстро. Они был невероятно красивыми и вкусными. Благодарю
+                    за шикарные изделия!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="rectangle">
+              <img src="./images/samuil.png" alt="" class="rectangle__img" />
+              <div class="text">
+                <h3>Финн</h3>
+                <div class="blockquote">
+                  <p>
+                    Вчера заказывал маффины и пирожные. Мне все понравилось!
+                    Быстро, вкусно и красиво. Буду вашим постоянным клиентом,
+                    спасибо!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="telephone">
+            <i class="fa fa-phone fa__footer" aria-hidden="true"></i>
+            <a href="tel:+7-707-344-6360">+7-707-344-6360</a>
+          </div>
+          <div class="social-media">
+            <a href="https://www.instagram.com/conditer_askar/">
+              <i class="fa fa-instagram fa__footer" aria-hidden="true"></i>
+            </a>
+            <a href="https://vk.com/olesya.konditer">
+              <i class="fa fa-vk fa__footer" aria-hidden="true"></i>
+            </a>
+            <a href="https://ok.ru/video/c4129327">
+              <i
+                class="fa fa-odnoklassniki-square fa__footer"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="https://touch.facebook.com/Кондитер-329362987570812/">
+              <i
+                class="fa fa-facebook-square fa__footer"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="https://т.website/s/secretkonditera">
+              <i class="fa fa-telegram fa__footer" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="video__modal-canvas" data-modal="2">
+      <div class="video__modal">
+        <div class="video__modal-close">
+          <span>&times;</span>
+        </div>
+        <div class="video__container">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/mKMSPilj9m4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" data-modal="1">
+      <div class="modal__canvas">
+        <div class="modal__wrapper">
+          <span class="modal__close" data-modal="1">&times;</span>
+          <div class="modal__content">
+            <h1>Сделать заказ</h1>
+            <p>
+              Оставьте Ваш номер телефона и мы свяжемся с Вами в ближайшее
+              время, чтобы уточнить подробности и Ваши пожелания.
+            </p>
+            <form>
+              <input type="text" placeholder="Ваше имя" class="modal__input" />
+              <input
+                type="text"
+                placeholder="Ваш номер телефона"
+                class="modal__input"
+              />
+              <input
+                type="text"
+                placeholder="Предмет заказа"
+                class="modal__input"
+              />
+              <input
+                type="text"
+                placeholder="Ваш номер телефона"
+                class="modal__input"
+              />
+              <input
+                type="submit"
+                value="Отправить"
+                class="modal__input modal__button"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/second.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Conditer</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="inner">
+          <div class="header__flex">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html"> Главная</a></li>
+                <li class="nav__item">
+                  <a href="./about.html"> Обо мне</a>
+                </li>
+                <li class="nav__item"><a href="./project.html"> Проекты</a></li>
+              </ul>
+            </nav>
+            <button class="header__button">Сделать заказ</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="welcome">
+        <div class="wrapper welcome__wrapper">
+          <div class="welcome__inner">
+            <div class="welcome__button">
+              <a href="./project.html"><button>Мои работы</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="telephone">
+            <i class="fa fa-phone fa__footer" aria-hidden="true"></i>
+            <a href="tel:+7-707-344-6360">+7-707-344-6360</a>
+          </div>
+          <div class="social-media">
+            <a href="https://www.instagram.com/conditer_askar/">
+              <i class="fa fa-instagram fa__footer" aria-hidden="true"></i>
+            </a>
+            <a href="https://vk.com/olesya.konditer">
+              <i class="fa fa-vk fa__footer" aria-hidden="true"></i>
+            </a>
+            <a href="https://ok.ru/video/c4129327">
+              <i
+                class="fa fa-odnoklassniki-square fa__footer"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="https://touch.facebook.com/Кондитер-329362987570812/">
+              <i
+                class="fa fa-facebook-square fa__footer"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="https://т.website/s/secretkonditera">
+              <i class="fa fa-telegram fa__footer" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <div class="modal__canvas">
+        <div class="modal__wrapper">
+          <div class="modal__close">
+            <span>х</span>
+          </div>
+          <div class="modal__content">
+            <h1>Сделать заказ</h1>
+            <p>
+              Оставьте Ваш номер телефона и мы свяжемся с Вами в ближайшее
+              время, чтобы уточнить подробности и Ваши пожелания.
+            </p>
+            <form>
+              <input type="text" placeholder="Ваше имя" class="modal__input" />
+              <input
+                type="text"
+                placeholder="Ваш номер телефона"
+                class="modal__input"
+              />
+              <input
+                type="text"
+                placeholder="Предмет заказа"
+                class="modal__input"
+              />
+              <input
+                type="text"
+                placeholder="Ваш номер телефона"
+                class="modal__input"
+              />
+              <input
+                type="submit"
+                value="Отправить"
+                class="modal__input modal__button"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
