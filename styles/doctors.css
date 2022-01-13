@@ -1,0 +1,738 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Yeseva+One&display=swap");
+
+:root {
+  --primary-color: #1f2b6c;
+  --default-color: #159deb;
+  --accent-color: #bfd2f8;
+  --secondary-color: #159eec;
+  --black-color: #000;
+  --white-color: #fcfefe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.first-line {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-line__logo {
+  font-family: "Yeseva One", cursive;
+  font-size: 2.25rem;
+}
+
+.first-line__logo .first-line__logo-med {
+  color: var(--primary-color);
+}
+
+.first-line__logo .first-line__logo-dical {
+  color: var(--default-color);
+}
+
+.first-line__services {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.first-line__services-info {
+  display: flex;
+  gap: 10px;
+}
+
+.first-line__list {
+  list-style: none;
+}
+
+.first-item {
+  color: var(--primary-color);
+}
+
+.second-item {
+  color: var(--default-color);
+}
+
+.second-line {
+  width: 100%;
+  background: var(--primary-color);
+  padding: 30px 0;
+}
+
+.second-line.header__fix {
+  position: fixed;
+  z-index: 50;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+.second-line__logo {
+  font-family: "Yeseva One", cursive;
+  font-size: 2rem;
+  display: none;
+}
+
+.second-line__logo-med {
+  color: var(--accent-color);
+}
+
+.second-line__logo-dical {
+  color: var(--white-color);
+}
+
+.header__burger {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .nav__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__item a {
+  font-size: 1.15rem;
+  color: var(--white-color);
+}
+
+.nav__item a:hover {
+  text-decoration: underline;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.button {
+  padding: 15px 35px;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.15rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.primary-header {
+  font-size: 1.35rem;
+  color: var(--secondary-color);
+  margin: 10px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.default-header {
+  font-family: "Yeseva One", cursive;
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+#meet {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url(../images/Rectangle\ 3.png);
+  background-size: cover;
+  padding: 126px 0 160px 0;
+}
+
+.meet__text h4 {
+  font-weight: 400;
+  color: var(--primary-color);
+  text-align-last: left;
+}
+
+.meet__text h1 {
+  font-family: Yeseva One;
+  text-align: left;
+  font-size: 3rem;
+}
+
+#doctors {
+  margin: 75px auto 0 auto;
+}
+
+.doctors__cards-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.doctors__card {
+  width: 23%;
+  margin: 0 auto;
+  background: var(--accent-color);
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  overflow: hidden;
+  color: var(--primary-color);
+}
+
+.doctors__card-img {
+  margin-bottom: 25px;
+}
+
+.doctors__card p {
+  margin-bottom: 10px;
+}
+
+.doctors__card h3 {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.doctors__card-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32%;
+  margin: 0 auto 25px auto;
+}
+
+.doctors__button {
+  width: 100%;
+  background: var(--primary-color);
+  color: var(--accent-color);
+  padding: 12px;
+}
+
+.doctors__button:hover {
+  text-decoration: underline;
+}
+
+#statement {
+  margin-top: 75px;
+  background: linear-gradient(rgb(31, 43, 108, 0.65), rgb(31, 43, 108, 0.65)),
+    url(../images/Rectangle\ 53.png);
+  background-size: cover;
+  text-align: center;
+}
+
+.statement__text {
+  width: 50%;
+  margin: 0 auto;
+  color: var(--white-color);
+  padding: 115px 0 85px 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.statement__img {
+  margin-bottom: 20px;
+}
+
+.statement__text p {
+  margin: 30px auto;
+}
+
+.statement__text hr {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid var(--accent-color);
+}
+
+#news {
+  margin-top: 140px;
+}
+
+.news__cards {
+  margin-top: 70px;
+}
+
+.news__card {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  box-shadow: 0 0 9px 3px rgb(153, 153, 153);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.news__card:hover {
+  transform: scale(1.1);
+}
+
+.news__cards-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.news__card-text h5 {
+  font-weight: 400;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.news__card-text h3 {
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.news__card-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+
+#contact {
+  margin-top: 140px;
+}
+
+.contact__cards {
+  margin: 75px auto;
+}
+
+.contact__cards-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__card {
+  width: 22%;
+  height: 275px;
+  text-align: left;
+  background: var(--accent-color);
+  padding: 60px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.contact__card-header {
+  text-align: left;
+  color: var(--primary-color);
+}
+
+.contact__card-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  line-height: 35px;
+}
+
+.contact__card:hover .contact__img {
+  stroke: var(--accent-color);
+}
+
+.contact__card:hover {
+  background: var(--primary-color);
+}
+
+.contact__card:hover .contact__card-header {
+  color: var(--accent-color);
+}
+
+.contact__card:hover .contact__card-link {
+  color: var(--accent-color);
+}
+
+.footer {
+  background: var(--primary-color);
+  padding: 80px 0 86px 0;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer__flex {
+  align-items: start;
+}
+
+.footer__left-side span {
+  font-family: Yeseva One;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.footer__left-side p {
+  font-size: 1.15rem;
+  color: var(--white-color);
+  margin-top: 20px;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer h4 {
+  color: var(--white-color);
+  margin-bottom: 40px;
+}
+
+.footer__list-item {
+  margin-bottom: 10px;
+}
+
+.footer__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__list-item a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  padding: 15px 10px;
+  background: var(--accent-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer__button:hover .footer__img {
+  fill: var(--accent-color);
+}
+
+.footer__button:hover {
+  background: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.footer hr {
+  margin: 50px auto;
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.footer__icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__icon {
+  fill: var(--accent-color);
+}
+
+.footer__copy {
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  gap: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+  /* display: none; */
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal__window {
+  width: 30%;
+  background: var(--primary-color);
+  margin: 0 auto;
+  border-radius: 15px;
+  text-align: center;
+  padding: 100px 90px;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 50px;
+  font-size: 2.9rem;
+  transition: all 0.3s linear;
+  color: var(--white-color);
+}
+
+.modal__close:hover {
+  transform: rotate(180deg);
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.modal__input {
+  padding: 10px;
+  font-size: 1.25rem;
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.modal__input::placeholder {
+  color: var(--primary-color);
+}
+
+.modal__button {
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 1.4rem;
+  width: 50%;
+  border: 2px solid var(--primary-color);
+  background: var(--accent-color);
+  color: var(--primary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.modal__button:hover {
+  background: var(--primary-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.burger-modal {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+  }
+  .first-line {
+    display: none;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .second-line.header__fix {
+    height: 50px;
+    width: 100vw;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    font-size: 2rem;
+    color: var(--white-color);
+  }
+  .primary-header {
+    font-size: 1.15rem;
+  }
+  .default-header {
+    font-size: 2rem;
+  }
+  .nav {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .second-line__logo {
+    display: block;
+  }
+  .burger-modal.active {
+    display: flex;
+  }
+  .burger-modal {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    height: 100vh;
+    top: 0;
+  }
+  .burger-modal__window {
+    width: 100vw;
+    height: 100%;
+    background: var(--accent-color);
+  }
+  .burger-modal__header {
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 20px 15px;
+    font-size: 0.25rem;
+  }
+  .burger-modal__close {
+    color: var(--white-color);
+    font-size: 3rem;
+  }
+  .burger-modal__menu {
+    padding: 50px 40px;
+    text-align: center;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .menu__item a {
+    color: var(--primary-color);
+    font-size: 1.85rem;
+  }
+  .menu__item {
+    list-style: none;
+    font-weight: 400;
+  }
+  .menu__item a:hover {
+    font-weight: 600;
+  }
+  .burger-modal__button {
+    padding: 15px 100px;
+    border-radius: 50px;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    background: var(--primary-color);
+    font-size: 16px;
+    transition: 0.5s;
+  }
+  .burger-modal__button:hover {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    background: var(--accent-color);
+  }
+  #meet {
+    background-position-x: center;
+  }
+  .meet__text h4 {
+    font-size: 1.25rem;
+  }
+
+  .doctors__card {
+    width: 94%;
+  }
+  .doctors__cards-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .statement__text {
+    width: 300px;
+    font-size: 1.2rem;
+  }
+  .news__cards-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .news__card {
+    width: 100%;
+    height: 100px;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  .news__card-img {
+    width: 100px;
+    height: 100px;
+  }
+  .news__card-text h5 {
+    margin-bottom: 5px;
+  }
+  .news__card-text h3 {
+    margin-bottom: 5px;
+  }
+
+  .contact__cards-row {
+    flex-direction: column;
+  }
+  .contact__card {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  .contact__card h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer__middle {
+    display: none;
+  }
+  .footer__left-side p {
+    font-size: 0;
+  }
+  .footer__left-side span {
+    font-size: 3.5rem;
+  }
+  .footer__flex {
+    flex-direction: column;
+  }
+  .footer__right-side h4 {
+    font-size: 0;
+  }
+  .footer__button {
+    font-size: 1.3rem;
+    padding: 20px;
+  }
+
+  .modal {
+    width: 100vw;
+    height: 100vh;
+  }
+  .modal__window {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    padding: 150px 30px;
+    margin-top: 20%;
+    border-radius: 3px;
+  }
+}
